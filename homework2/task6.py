@@ -11,8 +11,8 @@ print(palindromeMain)
 print(reverse)
 
 if palindromeMain == reverse:
-    print("Число является полиндромом")
+    print("Число является палиндромом")
 else:
-    print("Число не является полиндромом")
+    print("Число не является палиндромом")
     
 
