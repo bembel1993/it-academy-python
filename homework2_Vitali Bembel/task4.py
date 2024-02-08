@@ -8,8 +8,8 @@ spt = []
 for x in enterString:
     spt.append(x)
 
-UpperQty = 0;
-LowerQty = 0;
+UpperQty = 0
+LowerQty = 0
 
 for x in range(len(spt)):
     if spt[x].isupper():
