@@ -18,3 +18,11 @@
 # Error checking for text strings or other invalid inputs is not required, only valid positive non-zero
 # integers will be passed into the function.
 
+def armstrong_number(number):
+    num_str = str(number)
+    num_digits = len(num_str)
+    total = sum(int(digit) ** num_digits for digit in num_str)
+    return number == total
+
+print(armstrong_number(153))
+print(armstrong_number(1652))
