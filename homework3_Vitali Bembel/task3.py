@@ -29,7 +29,7 @@ def tuple_practice(arraycoreteg):
     if arraycoreteg == coreteg:
         return listn
 
-a = ['a', 'b', 'c']
-b = ('a', 'b', 'c')
-print(tuple_practice(a))
-print(tuple_practice(b))
+a_list = ['a', 'b', 'c']
+b_coreteg = ('a', 'b', 'c')
+print(tuple_practice(a_list))
+print(tuple_practice(b_coreteg))

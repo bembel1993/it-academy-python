@@ -1,4 +1,4 @@
-cout = 1
+count = 1
 num1 = 1
 num2 = 1
 

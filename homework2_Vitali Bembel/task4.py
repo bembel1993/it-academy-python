@@ -1,20 +1,20 @@
 #enterstring = str(input("Введите строку:\n "))
-enterstring = "aBjksdjskdKJHKJHUTFlmlmAc"
+enter_string = "aBjksdjskdKJHKJHUTFlmlmAc"
 arr = []
 
-for x in enterstring:
+for x in enter_string:
     arr.append(x)
 
-upperqty = 0
-lowerqty = 0
+upper_qty = 0
+lower_qty = 0
 
 for x in arr:
     if 'a' <= x <= 'z':
-        upperqty += 1
+        upper_qty += 1
     if 'A' <= x <= 'Z':
-        lowerqty += 1
+        lower_qty += 1
 
-print("Строчных букв: " + str(lowerqty) + "\nПрописных букв: " + str(upperqty))
+print("Строчных букв: " + str(lower_qty) + "\nПрописных букв: " + str(upper_qty))
         
 
 

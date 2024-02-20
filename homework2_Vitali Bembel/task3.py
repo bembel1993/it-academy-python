@@ -1,10 +1,10 @@
-#enterString = str(input("Введите строку:\n "))
-inputstring = "abc cde def"
+#input_string = str(input("Введите строку:\n "))
+input_string = "abc cde def"
 
-newstringarr = ""
+new_string_arr = ""
 
-for x in inputstring:
-    if x not in newstringarr and x != " ":
-        newstringarr += x
+for x in input_string:
+    if x not in new_string_arr and x != " ":
+        new_string_arr += x
 
-print(newstringarr)
+print(new_string_arr)
