@@ -1,23 +1,20 @@
-import re
-import string
+#enterstring = str(input("Введите строку:\n "))
+enterstring = "aBjksdjskdKJHKJHUTFlmlmAc"
+arr = []
 
-#enterString = str(input("Введите строку:\n "))
-enterString = "aBjksdjskdKJHKJHUTFlmlmAc"
-spt = []
+for x in enterstring:
+    arr.append(x)
 
-for x in enterString:
-    spt.append(x)
+upperqty = 0
+lowerqty = 0
 
-UpperQty = 0
-LowerQty = 0
+for x in arr:
+    if 'a' <= x <= 'z':
+        upperqty += 1
+    if 'A' <= x <= 'Z':
+        lowerqty += 1
 
-for x in range(len(spt)):
-    if spt[x].isupper():
-        UpperQty += 1
-    if spt[x].islower():
-        LowerQty += 1
-
-print("Строчных букв: " + str(LowerQty) + "\nПрописных букв: " + str(UpperQty))
+print("Строчных букв: " + str(lowerqty) + "\nПрописных букв: " + str(upperqty))
         
 
 

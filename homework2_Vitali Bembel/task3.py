@@ -1,17 +1,10 @@
-import re
-import string
-
 #enterString = str(input("Введите строку:\n "))
-enterString = "abc cde def"
-arrStr = enterString.replace(" ", "")
+inputstring = "abc cde def"
 
-print(arrStr)
+newstringarr = ""
 
-newStringArr = []
+for x in inputstring:
+    if x not in newstringarr and x != " ":
+        newstringarr += x
 
-for x in arrStr:
-    if x not in newStringArr:
-        newStringArr.append(x)
-        
-newStr = ''.join(newStringArr)
-print(newStr)
+print(newstringarr)

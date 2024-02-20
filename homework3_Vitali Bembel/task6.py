@@ -4,15 +4,15 @@
 # дополнительный список использовать нельзя, задачу нужно выполнить за один проход по списку.
 # Распечатайте полученный список.
 
-def sort_list(list):
+def sort_list(value):
     b = []
     c = []
     d = []
-    for i in range(len(list)):
-        if list[i] == 0:
-            b.append(list[i])
-        if list[i] > 0:
-            c.append(list[i])
+    for i in range(len(value)):
+        if value[i] == 0:
+            b.append(value[i])
+        if value[i] > 0:
+            c.append(value[i])
     d = c + b
     return d
 

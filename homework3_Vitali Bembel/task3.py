@@ -28,7 +28,6 @@ def tuple_practice(arraycoreteg):
         return tuple(cortegeList), a
     if arraycoreteg == coreteg:
         return listn
-    # return (coreteg, listn)
 
 a = ['a', 'b', 'c']
 b = ('a', 'b', 'c')

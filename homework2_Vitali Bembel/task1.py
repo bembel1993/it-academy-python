@@ -1,14 +1,12 @@
-from math import sqrt
+mrub, ncent, sqty = int(input("Введите рубли:\n ")), int(input("Введите копейки:\n ")), int(input("Кол. товара:\n "))
 
-Mrub, Ncent, Sqty = int(input("Введите рубли:\n ")), int(input("Введите копейки:\n ")), int(input("Кол. товара:\n "))
-
-sumcent = Ncent * Sqty
-sumrub = Mrub * Sqty
+sumcent = ncent * sqty
+sumrub = mrub * sqty
 if sumcent >= 100:
-    for count in range(Sqty):
+    for count in range(sqty):
         sumrubcount = sumrub+count
         sumcentresidue = sumcent - (100*count)
 else:
     sumrubcount = sumrub
     sumcentresidue = sumcent
-print ("Общая цена: " + str(sumrubcount) + " руб. " + str(sumcentresidue) +" коп. за " + str(Sqty) +" шт.")
+print ("Общая цена: " + str(sumrubcount) + " руб. " + str(sumcentresidue) +" коп. за " + str(sqty) +" шт.")

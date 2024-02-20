@@ -16,13 +16,12 @@ def list_practice(list):
     return ("1.", b, "2.", c)
 
 def list_practice2(list):
-    b = list
     c = []
-    d = b.copy()
+    d = list.copy()
     e = d.copy()
     for x in range(len(list)):
         if x == 1:
-            c = b.pop(x)
+            c = list.pop(x)
             e.append(c)
     return ("3.", d, "4", c, "5.", e)
 
